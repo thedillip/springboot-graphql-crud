@@ -1,0 +1,11 @@
+type Query {
+    employees:[EmployeeResponse]
+    employee(employeeId:Int):EmployeeResponse
+    employeesByCountry(country:String):[EmployeeResponse]
+}
+
+type Mutation {
+    employee(employeeRequest:EmployeeRequest):EmployeeResponse
+    updateEmployeeById(employeeRequest:EmployeeRequest):EmployeeResponse
+    deleteEmployeeById(employeeId:Int):String
+}

@@ -1,0 +1,10 @@
+type EmployeeResponse{
+    id:Int
+    firstName:String
+    lastName:String
+    email:String
+    phone:String
+    gender:String
+    country:String
+    companyName:String
+}
